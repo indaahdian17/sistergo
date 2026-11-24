@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 import '../theme/colors.dart';
 import '../widgets/common.dart';
 
-// ============================================================
-//  6. DATA DIRI
-// ============================================================
 class DataDiriPage extends StatelessWidget {
   const DataDiriPage({super.key});
 
@@ -20,7 +17,6 @@ class DataDiriPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // nilai data personal (kolom kanan)
     const values = [
       'Indah Dian Nofita', // Nama
       'Banjarnegara', // Tempat Lahir
@@ -40,7 +36,6 @@ class DataDiriPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   _title('Data Personal'),
-                  // Label kiri + nilai kanan
                   Stack(
                     children: [
                       Column(

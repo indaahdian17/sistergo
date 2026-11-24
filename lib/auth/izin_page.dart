@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 import '../theme/colors.dart';
 import '../widgets/common.dart';
 
-// ============================================================
-//  11. BUAT IZIN
-// ============================================================
 class IzinPage extends StatefulWidget {
   const IzinPage({super.key});
   @override
@@ -20,7 +17,7 @@ class _IzinPageState extends State<IzinPage> {
   final _selesaiJam = TextEditingController();
   final _alasan = TextEditingController();
   final _lampiran = TextEditingController();
-
+ 
   @override
   void dispose() {
     for (final c in [

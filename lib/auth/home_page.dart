@@ -3,9 +3,6 @@ import '../theme/colors.dart';
 import '../widgets/common.dart';
 import 'izin_page.dart';
 
-// ============================================================
-//  2. HOME
-// ============================================================
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -57,7 +54,7 @@ class HomePage extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Header + kartu tanggal
+
           Stack(
             clipBehavior: Clip.none,
             children: [
@@ -125,7 +122,7 @@ class HomePage extends StatelessWidget {
           ),
           const SizedBox(height: 76),
 
-          // Presensi
+
           Padding(
             padding: const EdgeInsets.fromLTRB(20, 4, 20, 8),
             child: Row(
@@ -153,7 +150,6 @@ class HomePage extends StatelessWidget {
             ),
           ),
 
-          // Jurnal PKL
           _sectionTitle('Jurnal PKL'),
           Container(
             margin: const EdgeInsets.symmetric(horizontal: 20),
@@ -185,7 +181,6 @@ class HomePage extends StatelessWidget {
             ),
           ),
 
-          // Jadwal Pelajaran
           _sectionTitle('Jadwal Pelajaran'),
           Container(
             margin: const EdgeInsets.symmetric(horizontal: 20),
@@ -216,7 +211,6 @@ class HomePage extends StatelessWidget {
             ),
           ),
 
-          // Perizinan
           _sectionTitle('Perizinan'),
           Container(
             margin: const EdgeInsets.symmetric(horizontal: 14),

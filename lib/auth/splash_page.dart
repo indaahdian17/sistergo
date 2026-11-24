@@ -3,10 +3,6 @@ import '../theme/colors.dart';
 import '../widgets/common.dart';
 import 'login_page.dart';
 
-// ============================================================
-//  SPLASH SCREEN
-//  Tampil sebentar (logo dalam lingkaran) lalu otomatis pindah ke Login.
-// ============================================================
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
   @override
@@ -29,7 +25,6 @@ class _SplashPageState extends State<SplashPage>
         .animate(CurvedAnimation(parent: _ctrl, curve: Curves.easeOutBack));
     _ctrl.forward();
 
-    // Setelah 3 detik pindah ke halaman Login
     Future.delayed(const Duration(seconds: 3), () {
       if (!mounted) return;
       Navigator.pushReplacement(
@@ -59,7 +54,6 @@ class _SplashPageState extends State<SplashPage>
           opacity: _fade,
           child: ScaleTransition(
             scale: _scale,
-            // Hanya lingkaran berisi logo (tulisan SISTERGO sudah ada di logo)
             child: Container(
               width: 295,
               height: 295,

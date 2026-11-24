@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import '../theme/colors.dart';
 
-// ============================================================
-//  3. LMS (Pembelajaran)
-// ============================================================
 class _Mapel {
   final String code, name, teacher;
   final Color dark, light;
@@ -92,7 +89,7 @@ class LmsPage extends StatelessWidget {
             ),
           ),
         ),
-        // Search
+
         Container(
           margin: const EdgeInsets.fromLTRB(30, 18, 30, 0),
           height: 52,
@@ -108,7 +105,7 @@ class LmsPage extends StatelessWidget {
             ),
           ),
         ),
-        // Statistik
+
         Container(
           margin: const EdgeInsets.fromLTRB(28, 16, 28, 14),
           height: 82,
@@ -126,7 +123,7 @@ class LmsPage extends StatelessWidget {
             ],
           ),
         ),
-        // Daftar mapel
+
         Expanded(
           child: ListView.separated(
             padding: const EdgeInsets.fromLTRB(28, 0, 28, 16),

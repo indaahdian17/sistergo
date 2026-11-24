@@ -87,7 +87,7 @@ class AkunPage extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 70),
-          // Kartu Profil
+          // kartu profil
           Container(
             margin: const EdgeInsets.symmetric(horizontal: 52),
             padding: const EdgeInsets.fromLTRB(16, 12, 16, 12),
@@ -108,7 +108,7 @@ class AkunPage extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 56),
-          // Logout
+          // logout
           Container(
             margin: const EdgeInsets.symmetric(horizontal: 52),
             padding: const EdgeInsets.fromLTRB(16, 20, 16, 34),

@@ -6,9 +6,6 @@ import 'cbt_page.dart';
 import 'akun_page.dart';
 import 'presensi_wajah_page.dart';
 
-// ============================================================
-//  SHELL + BOTTOM NAV (Home, LMS, Presensi, CBT, Akun)
-// ============================================================
 class MainShell extends StatefulWidget {
   const MainShell({super.key});
   @override
@@ -16,12 +13,12 @@ class MainShell extends StatefulWidget {
 }
 
 class _MainShellState extends State<MainShell> {
-  int _index = 0; // 0 Home, 1 LMS, 3 CBT, 4 Akun
+  int _index = 0; 
 
   final _pages = const [
     HomePage(),
     LmsPage(),
-    SizedBox(), // placeholder Presensi (membuka halaman baru)
+    SizedBox(), 
     CbtPage(),
     AkunPage(),
   ];
@@ -73,14 +70,14 @@ class _MainShellState extends State<MainShell> {
                   children: [
                     _item(0, 'Home', Icons.home_rounded),
                     _item(1, 'LMS', Icons.school_rounded),
-                    const Expanded(child: SizedBox()), // ruang tombol tengah
+                    const Expanded(child: SizedBox()), 
                     _item(3, 'CBT', Icons.assignment_rounded),
                     _item(4, 'Akun', Icons.person_rounded),
                   ],
                 ),
               ),
             ),
-            // Tombol Presensi (tengah, menonjol)
+
             Positioned(
               top: -4,
               left: 0,

@@ -3,9 +3,6 @@ import '../theme/colors.dart';
 import '../widgets/common.dart';
 import 'main_shell.dart';
 
-// ============================================================
-//  1. LOGIN
-// ============================================================
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
   @override
@@ -43,7 +40,7 @@ class _LoginPageState extends State<LoginPage> {
       backgroundColor: C.bg,
       body: Stack(
         children: [
-          // Logo lingkaran
+
           Positioned(
             top: h * 0.11,
             left: 0,
@@ -66,7 +63,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
           ),
-          // Panel bawah melengkung
+
           Positioned(
             top: h * 0.37,
             left: 0,
